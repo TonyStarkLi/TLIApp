@@ -5,11 +5,11 @@
 //  Created by Botao Li on 7/21/19.
 //
 
-import FluentSQLite
+import FluentMySQL
 import Vapor
 import Foundation
 
-final class AcronymCategoryPivot: SQLiteUUIDPivot {
+final class AcronymCategoryPivot: MySQLUUIDPivot {
 	var id: UUID?
 	var acronymID: Acronym.ID
 	var categoryID: Category.ID

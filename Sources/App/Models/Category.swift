@@ -5,7 +5,7 @@
 //  Created by Botao Li on 7/18/19.
 //
 import Vapor
-import FluentSQLite
+import FluentMySQL
 
 final class Category: Codable {
 	var id: Int?
@@ -15,7 +15,7 @@ final class Category: Codable {
 	}
 }
 
-extension Category: SQLiteModel {}
+extension Category: MySQLModel {}
 extension Category: Migration {}
 extension Category: Content {}
 extension Category: Parameter {}
